@@ -1,18 +1,87 @@
-Project Name: Scientific Calculator
+# Scientific Calculator
 
-<img width="300" height="500" alt="Screenshot 2026-04-03 at 7 49 29 AM" src="https://github.com/user-attachments/assets/5a7a9907-31a5-48b2-a459-e2dee5e543cc" />
-<img width="300" height="500" alt="Screenshot 2026-04-03 at 7 50 27 AM" src="https://github.com/user-attachments/assets/61534511-f573-4759-9e6a-814616c51b4e" />
-<img width="300" height="500" alt="Screenshot 2026-04-03 at 7 50 32 AM" src="https://github.com/user-attachments/assets/6cc19274-ce48-49e7-9d43-027f71bab5b6" />
+A scientific calculator built entirely in Python using **CustomTkinter** as the GUI framework. Features a clean, warm-toned design with both standard arithmetic and scientific functions.
 
-Description: A fully functional scientific calculator built entirely on python and utilizing customtkinter as the GUI. Initially I built this because I thought MACOS didn't have a native calculator. I then found out I was wrong and it was actually the iPADOS that didn't have one for 14 years until Apple added it in 2024.
+---
 
-Features: Standard arithmetic, Scientific functions (sin, cos, tan, log, etc.), Expression Display, and Error handling for invallid operations.
+## Screenshots
 
-Installation: 
-              pip install customtkinter
-              python3 scientific\ calculator.py
+| Default | Mid-Operation | Result |
+|--------|---------------|--------|
+| ![Default state](https://i.imgur.com/uFiMNBg.png) | ![Mid-operation](https://i.imgur.com/taT1JGg.png) | ![Result](https://i.imgur.com/dwSV81b.png) |
 
-Tech Stack:
-              Python 3
-              CustomTkinter
-              Math Module
+---
+
+## Features
+
+**Standard Operations**
+- Addition, subtraction, multiplication, division
+- Decimal input and percentage calculation
+- Sign toggle (`+/-`)
+- Backspace and clear
+
+**Scientific Functions**
+- Trigonometry: `sin`, `cos`, `tan`
+- Square root (`√`) and exponentiation (`x²`, `xʸ`)
+- Logarithms: `log` (base 10), `ln` (natural log)
+
+**Quality of Life**
+- **DEG / RAD toggle** — switch angle units on the fly
+- **Calculation history** — last two operations displayed above the main screen
+- **Expression label** — shows the in-progress expression (e.g. `2 +`) while entering the second operand
+- **Clipboard copy** — click the display to copy the current value; a brief "Copied!" confirmation appears
+- **Keyboard support** — full numpad and keyboard input including operators, Enter, Backspace, and Escape
+- **Floating-point cleanup** — results rounded to 10 significant figures to suppress noise (e.g. no `0.9999999999`)
+- **Comma formatting** — large numbers display with thousands separators for readability
+
+---
+
+## Installation
+
+**Requirements**
+- Python 3.8+
+- [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)
+
+**Install dependencies**
+```bash
+pip install customtkinter
+```
+
+**Run**
+```bash
+python Scientific_Calculator.py
+```
+
+---
+
+## Keyboard Shortcuts
+
+| Key | Action |
+|-----|--------|
+| `0–9`, `.` | Number input |
+| `+`, `-`, `*`, `/` | Arithmetic operators |
+| `Enter` / `KP_Enter` | Equals |
+| `Backspace` | Delete last character |
+| `Escape` | Clear |
+| `%` | Percent |
+| Numpad keys | Full numpad support |
+
+---
+
+## Project Structure
+
+```
+Scientific_Calculator.py   # Main application — single file
+```
+
+---
+
+## Built With
+
+- [Python](https://www.python.org/)
+- [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)
+- [math](https://docs.python.org/3/library/math.html) (standard library)
+
+---
+
+*Codebase by Covert-v*
